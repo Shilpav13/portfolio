@@ -148,6 +148,6 @@ export const DATA = {
       end: "",
     },
   ],
-  projects: [],
-  hackathons: [],
+  projects: [] as { title: string; href: string; dates: string; active: boolean; description: string; technologies: readonly string[]; links: readonly { type: string; href: string; icon: React.ReactNode }[]; image: string; video: string }[],
+  hackathons: [] as { title: string; dates: string; location: string; description: string; image: string; links: readonly { title: string; icon: React.ReactNode; href: string }[] }[],
 } as const;
